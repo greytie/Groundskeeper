@@ -6,30 +6,30 @@ import { Week } from "./routes/Week";
 
 function App() {
 	return (
-		<div className="bg-gray-300 h-screen">
-			<Router>
-				<div>
-					<nav>
-						<ul>
-							<li>
-								<Link to="/"><span>Home</span></Link>
-							</li>
-							<li>
-								<Link to="/schedule">Schedule</Link>
-							</li>
-							<li>
-								<Link to="/week">Week</Link>
-							</li> 
-						</ul>
-					</nav>
-					<Routes>
-						<Route path="/schedule" element={<Schedule />}></Route>
-						<Route path="/week" element={<Week />}></Route>
-						<Route path="/" element={<Home />}></Route>
-					</Routes>
-				</div>
-			</Router>
-		</div>
+			<div className="bg-gray-300 h-screen">
+				<Router>
+					<div>
+						<nav>
+							<ul>
+								<li>
+									<Link to="/"><span>Home</span></Link>
+								</li>
+								<li>
+									<Link to="/schedule">Schedule</Link>
+								</li>
+								<li>
+									<Link to="/week">Week</Link>
+								</li> 
+							</ul>
+						</nav>
+						<Routes>
+							<Route path="/schedule" element={<Schedule />}></Route>
+							<Route path="/week" element={<Week />}></Route>
+							<Route path="/" element={<Home />}></Route>
+						</Routes>
+					</div>
+				</Router>
+			</div>
 	);
 }
 
