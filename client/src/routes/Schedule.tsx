@@ -1,18 +1,10 @@
 import { useState } from "react";
-import { useSetRecoilState } from "recoil";
 import { Card } from "../components/Card";
-import { itemListAtom } from "../recoil/atoms/ItemListAtom";
 
 export function Schedule() {
 	const [inputValue, setInputValue] = useState('');
-	const setItemList = useSetRecoilState(itemListAtom);
 
 	const scheduleItem = () => {
-		setItemList((oldItemList) => [
-			...oldItemList,
-			inputValue
-		]);
-		setInputValue('');
 	}
 
 	const onChange = ({target: {value}}: any): void => {

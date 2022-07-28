@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Home } from "./routes/Home";
+import { Home } from "./routes/home/Home";
 import { Schedule } from "./routes/Schedule";
 import { Week } from "./routes/Week";
 
